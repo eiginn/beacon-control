@@ -822,13 +822,13 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.381" drill="0">
+<class number="0" name="default" width="0.762" drill="0">
 <clearance class="0" value="0.3048"/>
 </class>
 </classes>
 <parts>
 <part name="MS1" library="adafruit" deviceset="FEATHERWING" device="_NODIM"/>
-<part name="U$1" library="SN74AHCT125N" deviceset="SN74AHCT125_N_14" device=""/>
+<part name="SN74A" library="SN74AHCT125N" deviceset="SN74AHCT125_N_14" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
@@ -840,6 +840,15 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
+<part name="X3" library="con-phoenix-350" deviceset="1751251" device=""/>
+<part name="X4" library="con-phoenix-350" deviceset="1751251" device=""/>
+<part name="X5" library="con-phoenix-350" deviceset="1751251" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="+12V" device=""/>
+<part name="P+6" library="supply1" deviceset="+12V" device=""/>
+<part name="P+7" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -847,7 +856,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 </plain>
 <instances>
 <instance part="MS1" gate="G$1" x="-27.94" y="81.28" rot="R270"/>
-<instance part="U$1" gate="A" x="35.56" y="76.2"/>
+<instance part="SN74A" gate="A" x="35.56" y="76.2"/>
 <instance part="GND2" gate="1" x="-43.18" y="68.58" rot="R270"/>
 <instance part="GND3" gate="1" x="30.48" y="60.96" rot="R270"/>
 <instance part="P+1" gate="1" x="17.78" y="60.96" rot="R270"/>
@@ -861,7 +870,22 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <instance part="GND1" gate="1" x="-33.02" y="104.14"/>
 <instance part="GND4" gate="1" x="7.62" y="106.68"/>
 <instance part="P+3" gate="1" x="101.6" y="76.2" rot="R270"/>
-<instance part="P+4" gate="1" x="22.86" y="104.14" rot="R180"/>
+<instance part="P+4" gate="1" x="22.86" y="106.68" rot="R180"/>
+<instance part="X3" gate="-1" x="35.56" y="114.3" rot="R90"/>
+<instance part="X3" gate="-2" x="43.18" y="114.3" rot="R90"/>
+<instance part="X3" gate="-3" x="50.8" y="114.3" rot="R90"/>
+<instance part="X4" gate="-1" x="60.96" y="114.3" rot="R90"/>
+<instance part="X4" gate="-2" x="68.58" y="114.3" rot="R90"/>
+<instance part="X4" gate="-3" x="76.2" y="114.3" rot="R90"/>
+<instance part="X5" gate="-1" x="86.36" y="114.3" rot="R90"/>
+<instance part="X5" gate="-2" x="93.98" y="114.3" rot="R90"/>
+<instance part="X5" gate="-3" x="101.6" y="114.3" rot="R90"/>
+<instance part="GND5" gate="1" x="35.56" y="106.68"/>
+<instance part="GND6" gate="1" x="60.96" y="106.68"/>
+<instance part="GND7" gate="1" x="86.36" y="106.68"/>
+<instance part="P+5" gate="1" x="50.8" y="106.68" rot="R180"/>
+<instance part="P+6" gate="1" x="76.2" y="106.68" rot="R180"/>
+<instance part="P+7" gate="1" x="101.6" y="106.68" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -874,22 +898,22 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="U$1" gate="A" pin="GND"/>
+<pinref part="SN74A" gate="A" pin="GND"/>
 <wire x1="33.02" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="!2OE"/>
+<pinref part="SN74A" gate="A" pin="!2OE"/>
 <wire x1="38.1" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="68.58" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="!1OE"/>
+<pinref part="SN74A" gate="A" pin="!1OE"/>
 <wire x1="38.1" y1="76.2" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="76.2" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="68.58" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="60.96" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="53.34" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="!3OE"/>
+<pinref part="SN74A" gate="A" pin="!3OE"/>
 <wire x1="93.98" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="66.04" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="!4OE"/>
+<pinref part="SN74A" gate="A" pin="!4OE"/>
 <wire x1="99.06" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
 <junction x="33.02" y="68.58"/>
 <junction x="33.02" y="60.96"/>
@@ -904,6 +928,21 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="X2" gate="-1" pin="K"/>
 <wire x1="7.62" y1="109.22" x2="7.62" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-1" pin="K"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="35.56" y1="111.76" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-1" pin="K"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="60.96" y1="111.76" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X5" gate="-1" pin="K"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="86.36" y1="111.76" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -920,7 +959,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <wire x1="-25.4" y1="106.68" x2="-25.4" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="VCC"/>
+<pinref part="SN74A" gate="A" pin="VCC"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="93.98" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -930,12 +969,12 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <wire x1="10.16" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LDATA" class="0">
+<net name="LDATA2" class="0">
 <segment>
 <pinref part="MS1" gate="G$1" pin="GPIO6"/>
 <wire x1="10.16" y1="45.72" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="45.72" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="2A"/>
+<pinref part="SN74A" gate="A" pin="2A"/>
 <wire x1="25.4" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -943,17 +982,88 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <segment>
 <pinref part="P+4" gate="1" pin="+12V"/>
 <pinref part="X2" gate="-3" pin="K"/>
-<wire x1="22.86" y1="106.68" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="109.22" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-3" pin="K"/>
+<pinref part="P+5" gate="1" pin="+12V"/>
+<wire x1="50.8" y1="111.76" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-3" pin="K"/>
+<pinref part="P+6" gate="1" pin="+12V"/>
+<wire x1="76.2" y1="111.76" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X5" gate="-3" pin="K"/>
+<pinref part="P+7" gate="1" pin="+12V"/>
+<wire x1="101.6" y1="111.76" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="HDATA" class="0">
+<net name="LDATA1" class="0">
 <segment>
-<pinref part="U$1" gate="A" pin="2Y"/>
-<wire x1="38.1" y1="63.5" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="63.5" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="MS1" gate="G$1" pin="GPIO5"/>
+<wire x1="10.16" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SN74A" gate="A" pin="1A"/>
+<wire x1="22.86" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LDATA3" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO9"/>
+<wire x1="10.16" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="48.26" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="SN74A" gate="A" pin="3A"/>
+<wire x1="96.52" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="HDATA3" class="0">
+<segment>
+<pinref part="SN74A" gate="A" pin="3Y"/>
+<wire x1="93.98" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="60.96" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-2" pin="K"/>
+<wire x1="68.58" y1="96.52" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LDATA4" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIO10"/>
+<wire x1="10.16" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="50.8" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="SN74A" gate="A" pin="4Y"/>
+<wire x1="101.6" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="HDATA4" class="0">
+<segment>
+<pinref part="SN74A" gate="A" pin="4A"/>
+<wire x1="93.98" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="71.12" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="X5" gate="-2" pin="K"/>
+<wire x1="93.98" y1="101.6" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="HDATA1" class="0">
+<segment>
 <pinref part="X2" gate="-2" pin="K"/>
-<wire x1="15.24" y1="93.98" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="111.76" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="111.76" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="SN74A" gate="A" pin="1Y"/>
+<wire x1="17.78" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="HDATA2" class="0">
+<segment>
+<pinref part="SN74A" gate="A" pin="2Y"/>
+<wire x1="38.1" y1="63.5" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="63.5" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="K"/>
+<wire x1="35.56" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="96.52" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -961,19 +1071,11 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 </sheets>
 <errors>
 <approved hash="102,1,-33.02,73.66,3V,+3V3,,,,"/>
-<approved hash="102,1,15.24,60.96,+5V,USB,,,,"/>
-<approved hash="201,1,15.24,60.96,+5V,USB\, +5V,,,,"/>
+<approved hash="102,1,10.16,60.96,USB,+5V,,,,"/>
 <approved hash="202,1,-33.02,76.2,MS1,!RESET,,,,"/>
-<approved hash="202,1,38.1,73.66,U$1,1A,,,,"/>
-<approved hash="202,1,93.98,63.5,U$1,3A,,,,"/>
-<approved hash="202,1,93.98,71.12,U$1,4A,,,,"/>
 <approved hash="104,1,93.98,76.2,U$1,VCC,+5V,,,"/>
 <approved hash="106,1,-38.1,73.66,+3V3,,,,,"/>
 <approved hash="106,1,-33.02,73.66,+3V3,,,,,"/>
-<approved hash="106,1,22.86,106.68,+12V,,,,,"/>
-<approved hash="106,1,22.86,111.76,+12V,,,,,"/>
-<approved hash="106,1,10.16,60.96,USB,,,,,"/>
-<approved hash="106,1,15.24,60.96,USB,,,,,"/>
 <approved hash="117,1,10.16,66.04,VBAT,,,,,"/>
 </errors>
 </schematic>
